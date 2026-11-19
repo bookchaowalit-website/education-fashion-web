@@ -38,7 +38,7 @@ export function LookbookView() {
           {visible.length === 0 ? (
             <EmptyState title="No looks in this silhouette" headingLevel={3} action={<button type="button" className="rs-plain" onClick={() => setFilter("all")}>Show all looks</button>} />
           ) : (
-            <ul className="rs-list look-grid" data-layout="cards">
+            <ul className="rs-list look-grid" role="list" data-layout="cards">
               {visible.map((look) => (
                 <li key={look.id}>
                   <article className="rs-entry">
